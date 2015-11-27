@@ -12,6 +12,8 @@ public class Servico implements Serializable {
     private int idServico;
     private String nomeServico;
     private int icoServico;
+    private int usaServidor;
+    private int usaPorta;
 
     public Servico(int idServico, String nomeServico, int icoServico) {
         this.idServico = idServico;
@@ -22,6 +24,21 @@ public class Servico implements Serializable {
     public Servico(String nomeServico, int icoServico) {
         this.nomeServico = nomeServico;
         this.icoServico = icoServico;
+    }
+
+    public Servico(String nomeServico, int icoServico, int usaServidor, int usaPorta) {
+        this.nomeServico = nomeServico;
+        this.icoServico = icoServico;
+        this.usaServidor = usaServidor;
+        this.usaPorta = usaPorta;
+    }
+
+    public Servico(int idServico, String nomeServico, int icoServico, int usaServidor, int usaPorta) {
+        this.idServico = idServico;
+        this.nomeServico = nomeServico;
+        this.icoServico = icoServico;
+        this.usaServidor = usaServidor;
+        this.usaPorta = usaPorta;
     }
 
     public Servico() {}
@@ -48,5 +65,21 @@ public class Servico implements Serializable {
 
     public void setIcoServico(int icoServico) {
         this.icoServico = icoServico;
+    }
+
+    public int getUsaServidor() {
+        return usaServidor;
+    }
+
+    public void setUsaServidor(int usaServidor) {
+        this.usaServidor = usaServidor;
+    }
+
+    public int getUsaPorta() {
+        return usaPorta;
+    }
+
+    public void setUsaPorta(int usaPorta) {
+        this.usaPorta = usaPorta;
     }
 }
