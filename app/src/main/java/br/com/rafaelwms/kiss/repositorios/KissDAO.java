@@ -10,20 +10,20 @@ import java.util.List;
 
 import br.com.rafaelwms.kiss.entidades.Conta;
 import br.com.rafaelwms.kiss.entidades.Servico;
-import br.com.rafaelwms.kiss.sqlite.KissDBHelper;
+import br.com.rafaelwms.kiss.localDB.KissLocalDataBaseHelper;
 
 /**
  * Created by Rafael on 26/11/2015.
  */
 public class KissDAO {
 
-    private KissDBHelper helper;
+    private KissLocalDataBaseHelper helper;
 
     private final String TB_SERV = "SERVICOS";
     private final String TB_CTA = "CONTAS";
     private final String SELECT_ALL = "SELECT * FROM ";
 
-    public KissDAO(Context ctx){helper = new KissDBHelper(ctx);}
+    public KissDAO(Context ctx){helper = new KissLocalDataBaseHelper(ctx);}
 
     private ContentValues servicoValues(Servico servico){
         ContentValues values = new ContentValues();
