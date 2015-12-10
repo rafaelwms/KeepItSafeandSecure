@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Keep It Safe and Secure</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_login">Welcome</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password (optional)</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
@@ -15,8 +15,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="null_text">@null</string>
-    <string name="title_activity_conta">ContaActivity</string>
+    <string name="null_text" translatable="false">@null</string>
+    <string name="title_activity_conta">Account</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -27,9 +27,22 @@
     <string name="hint_Conta_Servidor">Type Here Your Server Address</string>
     <string name="hint_Conta_Porta">Type Here Your Port</string>
     <string name="btn_Conta_Salvar">Save Account</string>
-    <string name="lbl_Servico">Service:</string>
+    <string name="lbl_Servico">Service</string>
     <string name="lbl_UsaServidor">Has Server</string>
     <string name="lbl_UsaPorta">Has Port</string>
     <string name="btnServicos">Services</string>
     <string name="btn_contas">Accounts</string>
+    <string name="btnAjustes">Settings</string>
+    <string name="btnLogout">Logout</string>
+    <string name="hint_email">Type your e-mail</string>
+    <string name="hint_kiss_pass">Type Here your K.I.S.S password</string>
+    <string name="btn_Login">Sign In</string>
+    <string name="lbl_cadastre_se">Not registred yet?</string>
+    <string name="btnRegistrar">Sign Up For Free</string>
+    <string name="title_activity_cadastro">Register</string>
+    <string name="lblNovaConta">New Keep It Safe and Secure account</string>
+    <string name="hint_email_cadastro">Type your email</string>
+    <string name="lbl_termos_de_uso">Use terms</string>
+    <string name="ckd_de_acordo">I agree with the use terms</string>
+    <string name="btn_cadastrar">Register</string>
 </resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Keep It Safe and Secure</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_sign_in">Entre ou Cadastre</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="btnAjustes">Ajustes</string>
+    <string name="btnLogout">Sair</string>
+    <string name="btnServicos">Serviços</string>
+    <string name="btn_Conta_Salvar">Salvar Conta</string>
+    <string name="btn_contas">Contas</string>
+    <string name="error_field_required">Este campo é requirido</string>
+    <string name="error_incorrect_password">Senha inválida</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="hello_blank_fragment">Olá fragment branco</string>
+    <string name="hint_Confirmar_Senha">Confirmar Senha</string>
+    <string name="hint_Conta_Login">Digite seu Login aqui...</string>
+    <string name="hint_Conta_Porta">Digite sua porta...</string>
+    <string name="hint_Conta_Senha">Digite sua senha</string>
+    <string name="hint_Conta_Servidor">Digite o endereço de servidor</string>
+    <string name="lbl_Info_Conta">Informações da Conta</string>
+    <string name="lbl_Servico">Serviço</string>
+    <string name="lbl_UsaPorta">Usa porta</string>
+    <string name="lbl_UsaServidor">Usa Servidor</string>
+    <string name="permission_rationale">"Permissão para contatos"</string>
+    <string name="title_activity_conta">Conta</string>
+    <string name="title_activity_login">Bem Vindo</string>
+    <string name="hint_email">Digite seu e-mail cadastrado</string>
+    <string name="hint_kiss_pass">Digite sua senha K.I.S.S.</string>
+    <string name="btn_Login">Entrar</string>
+    <string name="lbl_cadastre_se">Ainda não cadastrado?</string>
+    <string name="btnRegistrar">Cadastre-se Gratuitamente</string>
+    <string name="lblNovaConta">Nova conta do Keep It Safe and Secure</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="hint_email_cadastro">Digite seu e-mail para cadastro</string>
+    <string name="lbl_termos_de_uso">Termos de uso</string>
+    <string name="ckd_de_acordo">Estou de acordo com os termos de uso</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+</resources>
