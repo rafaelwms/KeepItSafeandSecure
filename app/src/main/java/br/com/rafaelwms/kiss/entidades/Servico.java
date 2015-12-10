@@ -43,6 +43,8 @@ public class Servico implements Serializable {
 
     public Servico() {}
 
+
+
     public int getIdServico() {
         return idServico;
     }
@@ -53,6 +55,11 @@ public class Servico implements Serializable {
 
     public String getNomeServico() {
         return nomeServico;
+    }
+
+    @Override
+    public String toString() {
+        return this.nomeServico;
     }
 
     public void setNomeServico(String nomeServico) {
