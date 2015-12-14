@@ -4,6 +4,8 @@ import android.os.Parcelable;
 
 import java.io.Serializable;
 
+import br.com.rafaelwms.kiss.R;
+
 /**
  * Created by Rafael on 23/11/2015.
  */

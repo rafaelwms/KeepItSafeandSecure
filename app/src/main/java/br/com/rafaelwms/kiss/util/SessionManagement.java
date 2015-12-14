@@ -10,6 +10,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
+import br.com.rafaelwms.kiss.activities.LoginActivity;
+
 public class SessionManagement {
     // Shared Preferences
     SharedPreferences pref;
@@ -24,7 +26,7 @@ public class SessionManagement {
     int PRIVATE_MODE = 0;
 
     // Sharedpref file name
-    private static final String PREF_NAME = "AndroidHivePref";
+    private static final String PREF_NAME = "KissConfiguration";
 
     // All Shared Preferences Keys
     private static final String IS_LOGIN = "IsLoggedIn";
@@ -64,7 +66,7 @@ public class SessionManagement {
      * If false it will redirect user to login page
      * Else won't do anything
      * */
-    /*
+
     public void checkLogin(){
         // Check login status
         if(!this.isLoggedIn()){
@@ -81,7 +83,7 @@ public class SessionManagement {
         }
 
     }
-    */
+
 
 
     /**
@@ -102,7 +104,7 @@ public class SessionManagement {
     /**
      * Clear session details
      * */
-    /*
+
     public void logoutUser(){
         // Clearing all data from Shared Preferences
         editor.clear();
@@ -119,7 +121,7 @@ public class SessionManagement {
         // Staring Login Activity
         _context.startActivity(i);
     }
-    */
+
     /**
      * Quick check for login
      * **/

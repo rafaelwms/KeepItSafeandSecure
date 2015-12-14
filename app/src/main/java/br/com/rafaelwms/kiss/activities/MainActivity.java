@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(v.getId()){
 
             case R.id.btnServicos:
+                Intent it1 = new Intent(this, ListaServico.class);
+                startActivity(it1);
                 break;
 
             case R.id.btnContas:

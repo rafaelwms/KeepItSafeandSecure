@@ -37,4 +37,5 @@
     <string name="lbl_termos_de_uso">Termos de uso</string>
     <string name="ckd_de_acordo">Estou de acordo com os termos de uso</string>
     <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_novo_servico">Novo Serviço</string>
 </resources>

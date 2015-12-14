@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/img_item_servico"
+        android:src="@mipmap/servidoires" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img_item_servico"
+        android:layout_toEndOf="@+id/img_item_servico"
+        android:layout_alignBottom="@+id/img_item_servico"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/null_text"
+            android:id="@+id/txt_item_servico"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_UsaServidor"
+                android:id="@+id/ckb_item_servico_servidor"
+                android:layout_weight="0.5"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_UsaPorta"
+                android:id="@+id/ckb_item_servico_porta"
+                android:layout_weight="0.5"
+                android:checked="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -9,6 +9,8 @@ package br.com.rafaelwms.kiss.util;
     import android.content.DialogInterface;
     import android.graphics.drawable.Drawable;
 
+    import br.com.rafaelwms.kiss.R;
+
 public class AlertDialogManager {
         /**
          * Function to display simple Alert Dialog
@@ -28,11 +30,11 @@ public class AlertDialogManager {
             // Setting Dialog Message
             alertDialog.setMessage(message);
 
-            /*
+
             if(status != null)
                 // Setting alert dialog icon
-                alertDialog.setIcon((status)   : R.drawable.fail);
-            */
+                alertDialog.setIcon((status) ? R.mipmap.logout : R.mipmap.chave);
+
             // Setting OK Button
             alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {

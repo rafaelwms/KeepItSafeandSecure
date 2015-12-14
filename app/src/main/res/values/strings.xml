@@ -45,4 +45,7 @@
     <string name="lbl_termos_de_uso">Use terms</string>
     <string name="ckd_de_acordo">I agree with the use terms</string>
     <string name="btn_cadastrar">Register</string>
+    <string name="title_activity_lista_servico">ListaServico</string>
+    <string name="btn_novo_servico">New Service</string>
+    <string name="title_activity_servico">ServicoActivity</string>
 </resources>
