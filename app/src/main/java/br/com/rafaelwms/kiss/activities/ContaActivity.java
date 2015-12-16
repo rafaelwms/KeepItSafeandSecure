@@ -34,6 +34,8 @@ public class ContaActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conta);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.mipmap.add_user);
 
         //Elementos da parte da nova Conta.
         edtContaLogin = (EditText)findViewById(R.id.edt_Conta_Login);
@@ -54,18 +56,22 @@ public class ContaActivity extends AppCompatActivity implements View.OnClickList
         Intent it = getIntent();
         Servico servico = new Servico();
         servico = (Servico)it.getSerializableExtra("Servico");
+        if(servico != null && servico.getIdServico() > 0) {
+            imgContaServico.setImageResource(servico.getIcoServico());
+            txtNomeServico.setText(getResources().getText(R.string.lbl_Servico) + " " + servico.getNomeServico());
+            txtInfoServico.setText(getResources().getText(R.string.lbl_UsaServidor) + ": " + String.valueOf(servico.getUsaServidor())
+                    + "\n" + getResources().getText(R.string.lbl_UsaPorta) + ": " + String.valueOf(servico.getUsaPorta()));
 
-        txtNomeServico.setText(R.string.lbl_Servico + " "+ servico.getNomeServico());
-        txtInfoServico.setText(getResources().getText(R.string.lbl_UsaServidor)+": "+ String.valueOf(servico.getUsaServidor())
-        +"\n"+getResources().getText(R.string.lbl_UsaPorta)+": "+ String.valueOf(servico.getUsaPorta()));
+            if (servico.getUsaServidor() == 0) {
+                edtContaServidor.setVisibility(View.INVISIBLE);
+            }
+            if (servico.getUsaPorta() == 0) {
+                edtContaPorta.setVisibility(View.INVISIBLE);
+            }
+        }else{
 
-        if(servico.getUsaServidor() == 0){
-            edtContaServidor.setVisibility(View.INVISIBLE);
+
         }
-        if(servico.getUsaPorta() == 0){
-            edtContaPorta.setVisibility(View.INVISIBLE);
-        }
-
 
 
 

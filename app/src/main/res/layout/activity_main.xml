@@ -35,7 +35,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btnServicos"
-                android:id="@+id/btnServicos" />
+                android:id="@+id/btnServicos"
+                style="@style/btn_amarelo"
+                android:padding="0dp"
+                android:layout_margin="5dp" />
 
         </LinearLayout>
 
@@ -57,7 +60,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_contas"
-                android:id="@+id/btnContas" />
+                android:id="@+id/btnContas"
+                style="@style/btn_amarelo"
+                android:padding="0dp"
+                android:layout_margin="5dp" />
 
         </LinearLayout>
     </LinearLayout>
@@ -87,7 +93,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btnAjustes"
-                android:id="@+id/btnAjustes" />
+                android:id="@+id/btnAjustes"
+                style="@style/btn_amarelo"
+                android:padding="0dp"
+                android:layout_margin="5dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -108,7 +117,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btnLogout"
-                android:id="@+id/btnLog" />
+                android:id="@+id/btnLog"
+                style="@style/btn_amarelo"
+                android:padding="0dp"
+                android:layout_margin="5dp" />
 
         </LinearLayout>
 

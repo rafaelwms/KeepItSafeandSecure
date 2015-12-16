@@ -19,6 +19,7 @@ public class KissLocalDataBaseHelper extends SQLiteOpenHelper {
 
         db.execSQL( "CREATE TABLE SERVICOS (" +
                 "idServico      INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "idUsuario      INTEGER NOT NULL, " +
                 "nomeServico    TEXT NOT NULL UNIQUE, " +
                 "icoServico     INTEGER NOT NULL, " +
                 "usaServidor    INTEGER NOT NULL," +
@@ -26,11 +27,21 @@ public class KissLocalDataBaseHelper extends SQLiteOpenHelper {
 
         db.execSQL( "CREATE TABLE CONTAS (" +
                 "idConta INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "idServico INTEGER NOT NULL REFERENCES SERVICO(idServico) ON DELETE CASCADE, " +
+                "idServico INTEGER NOT NULL REFERENCES SERVICOS(idServico) ON DELETE CASCADE, " +
+                "idUsuario INTEGER NOT NULL REFERENCES USUARIOS(idUsuario) ON DELETE CASCADE, " +
                 "login TEXT NOT NULL, " +
                 "senha TEXT NOT NULL, " +
                 "servidor TEXT NULL, " +
                 "porta INTEGER NULL);");
+
+        db.execSQL( "CREATE TABLE USUARIOS (" +
+                "idUsuario INTEGER PRIMARY KEY, " +
+                "nivel INTEGER NOT NULL, " +
+                "nome TEXT NOT NULL, " +
+                "email TEXT NOT NULL, " +
+                "senha TEXT NOT NULL);");
+
+
 
     }
 

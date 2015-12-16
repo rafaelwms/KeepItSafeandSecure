@@ -1,4 +1,4 @@
-package br.com.rafaelwms.kiss.util;
+package br.com.rafaelwms.kiss.json_adapters;
 
 import org.json.JSONArray;
 import org.json.JSONException;

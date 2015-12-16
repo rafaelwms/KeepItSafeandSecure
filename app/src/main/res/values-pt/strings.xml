@@ -38,4 +38,11 @@
     <string name="ckd_de_acordo">Estou de acordo com os termos de uso</string>
     <string name="btn_cadastrar">Cadastrar</string>
     <string name="btn_novo_servico">Novo Serviço</string>
+    <string name="title_activity_lista_conta">Contas Registradas</string>
+    <string name="title_activity_lista_servico">Servicos</string>
+    <string name="title_activity_servico">Novo Serviço</string>
+    <string name="txt_Deletar">Apagar</string>
+    <string name="txt_Salvar">Salvar</string>
+    <string name="txt_novo">Novo</string>
+    <string name="txt_selecione_servico">Selecione</string>
 </resources>

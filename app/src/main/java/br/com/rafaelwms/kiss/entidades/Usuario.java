@@ -13,23 +13,29 @@ public class Usuario implements Serializable{
     private String email;
     private String nome;
     private String senha;
+    private int nivelSeguranca;
+
+
+
     private Date dataCadastro;
     private Date dataAlteracao;
 
     public Usuario() {
     }
 
-    public Usuario(String email, String nome, String senha) {
+    public Usuario(String email, String nome, String senha, int nivelSeguranca) {
         this.email = email;
         this.nome = nome;
         this.senha = senha;
+        this.nivelSeguranca = nivelSeguranca;
     }
 
-    public Usuario(int id, String email, String nome, String senha) {
+    public Usuario(int id, String email, String nome, String senha, int nivelSeguranca) {
         this.id = id;
         this.email = email;
         this.nome = nome;
         this.senha = senha;
+        this.nivelSeguranca = nivelSeguranca;
     }
 
     public int getId() {
@@ -78,6 +84,14 @@ public class Usuario implements Serializable{
 
     public void setDataAlteracao(Date dataAlteracao) {
         this.dataAlteracao = dataAlteracao;
+    }
+
+    public int getNivelSeguranca() {
+        return nivelSeguranca;
+    }
+
+    public void setNivelSeguranca(int nivelSeguranca) {
+        this.nivelSeguranca = nivelSeguranca;
     }
 
 }

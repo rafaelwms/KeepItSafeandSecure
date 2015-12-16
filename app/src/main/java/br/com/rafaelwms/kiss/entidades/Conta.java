@@ -9,6 +9,7 @@ public class Conta implements Serializable {
 
 
     private Servico servico;
+    private Usuario usuario;
     private int idConta;
     private String login;
     private String senha;
@@ -17,21 +18,24 @@ public class Conta implements Serializable {
 
     public Conta() { }
 
-    public Conta(Servico servico, int idConta, String login, String senha) {
+    public Conta(Servico servico, Usuario usuario, int idConta, String login, String senha) {
         this.servico = servico;
+        this.usuario = usuario;
         this.idConta = idConta;
         this.login = login;
         this.senha = senha;
     }
 
-    public Conta(Servico servico, String login, String senha) {
+    public Conta(Servico servico, Usuario usuario, String login, String senha) {
         this.servico = servico;
         this.login = login;
+        this.usuario = usuario;
         this.senha = senha;
     }
 
-    public Conta(Servico servico, int idConta, String login, String senha, String servidor, int porta) {
+    public Conta(Servico servico, Usuario usuario, int idConta, String login, String senha, String servidor, int porta) {
         this.servico = servico;
+        this.usuario = usuario;
         this.idConta = idConta;
         this.login = login;
         this.senha = senha;
@@ -93,5 +97,13 @@ public class Conta implements Serializable {
 
     public void setPorta(int porta) {
         this.porta = porta;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }

@@ -9,8 +9,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.List;
+
 import br.com.rafaelwms.kiss.R;
+import br.com.rafaelwms.kiss.entidades.ImageEnum;
 import br.com.rafaelwms.kiss.entidades.Servico;
+import br.com.rafaelwms.kiss.repositorios.KissDAO;
 import br.com.rafaelwms.kiss.util.SimpleCrypto;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -26,12 +30,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnMainAjustes;
     Button btnMainLog;
 
+    KissDAO dao;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.mipmap.ic_launcher);
         setContentView(R.layout.activity_main);
+        dao = new KissDAO(this);
 
         imgMainServicos = (ImageView) findViewById(R.id.img_servidores);
         imgMainContas = (ImageView) findViewById(R.id.img_contas);
@@ -48,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMainAjustes.setOnClickListener(this);
         btnMainLog.setOnClickListener(this);
 
+        cargaInicial();
+
     }
 
     @Override
@@ -61,13 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btnContas:
-                Intent it = new Intent(this, ContaActivity.class);
-                Servico serv = new Servico();
-                serv.setIdServico(1);
-                serv.setNomeServico("Facebook");
-                serv.setUsaPorta(0);
-                serv.setUsaServidor(0);
-                it.putExtra("Servico", serv);
+                Intent it = new Intent(this, ListaContaActivity.class);
                 startActivity(it);
                 break;
 
@@ -81,6 +84,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
 
+    }
+
+    private void cargaInicial(){
+
+        List<Servico> servicos = dao.listarServicos(0);
+
+        if(servicos == null || servicos.size() == 0){
+
+            Servico facebook = new Servico(0,"Facebook", ImageEnum.FACEBOOK,0, 0);
+            Servico twitter = new Servico(0,"Twitter", ImageEnum.TWITTER,0, 0);
+            Servico hotmail = new Servico(0,"Microsoft Outlook", ImageEnum.MICROSOFT,0, 0);
+            Servico ftp = new Servico(0,"Ftp", ImageEnum.FTP, 1, 1);
+
+            dao.insertServico(facebook);
+            dao.insertServico(twitter);
+            dao.insertServico(hotmail);
+            dao.insertServico(ftp);
+        }
+
+
 
     }
+
+
 }

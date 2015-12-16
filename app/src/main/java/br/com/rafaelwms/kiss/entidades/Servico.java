@@ -12,6 +12,7 @@ import br.com.rafaelwms.kiss.R;
 public class Servico implements Serializable {
 
     private int idServico;
+    private int idUsuario;
     private String nomeServico;
     private int icoServico;
     private int usaServidor;
@@ -28,14 +29,16 @@ public class Servico implements Serializable {
         this.icoServico = icoServico;
     }
 
-    public Servico(String nomeServico, int icoServico, int usaServidor, int usaPorta) {
+    public Servico(int idUsuario,String nomeServico, int icoServico, int usaServidor, int usaPorta) {
+        this.idUsuario = idUsuario;
         this.nomeServico = nomeServico;
         this.icoServico = icoServico;
         this.usaServidor = usaServidor;
         this.usaPorta = usaPorta;
     }
 
-    public Servico(int idServico, String nomeServico, int icoServico, int usaServidor, int usaPorta) {
+    public Servico(int idServico, int idUsuario, String nomeServico, int icoServico, int usaServidor, int usaPorta) {
+        this.idUsuario = idUsuario;
         this.idServico = idServico;
         this.nomeServico = nomeServico;
         this.icoServico = icoServico;
@@ -90,5 +93,13 @@ public class Servico implements Serializable {
 
     public void setUsaPorta(int usaPorta) {
         this.usaPorta = usaPorta;
+    }
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 }

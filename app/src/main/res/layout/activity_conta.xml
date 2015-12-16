@@ -12,12 +12,14 @@
     android:orientation="vertical"
     android:transitionGroup="false">
 
+
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="1"
-        android:background="#ffffff">
+        android:background="@drawable/btn_branco_9p">
 
         <ImageView
             android:layout_width="78dp"
@@ -48,6 +50,7 @@
         </LinearLayout>
     </LinearLayout>
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -56,10 +59,12 @@
         android:id="@+id/textView"
         android:gravity="center_vertical|center_horizontal"
         android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/btn_azul_escuro_9p"
         android:textColor="#ffffff" />
 
     <LinearLayout
+        android:verticalScrollbarPosition="right"
+        android:scrollbars="vertical"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -71,7 +76,7 @@
             android:id="@+id/edt_Conta_Login"
             android:hint="@string/hint_Conta_Login"
             android:textColorHint="@color/colorPrimary"
-            android:background="#ffffff"
+            android:background="@drawable/btn_branco_9p"
             android:paddingLeft="7dp" />
 
         <EditText
@@ -81,7 +86,7 @@
             android:ems="10"
             android:id="@+id/edt_Conta_Senha1"
             android:layout_marginTop="15dp"
-            android:background="#ffffff"
+            android:background="@drawable/btn_branco_9p"
             android:hint="@string/hint_Conta_Senha"
             android:textColorHint="@color/colorPrimary"
             android:paddingLeft="7dp" />
@@ -91,7 +96,7 @@
             android:layout_height="30dp"
             android:id="@+id/edt_Conta_Senha2"
             android:layout_marginTop="15dp"
-            android:background="#ffffff"
+            android:background="@drawable/btn_branco_9p"
             android:hint="@string/hint_Confirmar_Senha"
             android:textColorHint="@color/colorPrimary"
             android:paddingLeft="7dp" />
@@ -100,7 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:id="@+id/edt_Conta_Servidor"
-            android:background="#ffffff"
+            android:background="@drawable/btn_branco_9p"
             android:layout_marginTop="15dp"
             android:textColorHint="@color/colorPrimary"
             android:hint="@string/hint_Conta_Servidor"
@@ -113,7 +118,7 @@
             android:ems="10"
             android:id="@+id/edt_Conta_Porta"
             android:layout_gravity="center_horizontal"
-            android:background="#ffffff"
+            android:background="@drawable/btn_branco_9p"
             android:layout_marginTop="15dp"
             android:maxLength="8"
             android:hint="@string/hint_Conta_Porta"
@@ -126,7 +131,9 @@
             android:text="@string/btn_Conta_Salvar"
             android:id="@+id/btn_Conta_Salvar"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="30dp"
+            style="@style/btn_amarelo" />
 
     </LinearLayout>
+
 </LinearLayout>

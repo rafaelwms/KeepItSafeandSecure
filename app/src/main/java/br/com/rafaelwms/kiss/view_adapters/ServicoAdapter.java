@@ -1,6 +1,5 @@
-package br.com.rafaelwms.kiss.adapters;
+package br.com.rafaelwms.kiss.view_adapters;
 
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import br.com.rafaelwms.kiss.R;
-import br.com.rafaelwms.kiss.entidades.ImageEnum;
 import br.com.rafaelwms.kiss.entidades.Servico;
 
 /**
